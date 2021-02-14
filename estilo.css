@@ -1,0 +1,168 @@
+/*LIMPANDO FORMATAÇÕES*/
+*{
+    font-family: 'Barlow Semi Condensed';
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+	padding: 0;
+}
+
+body{
+    background: #ECF2F8;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*ESTRUTURA*/
+.estrutura{
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/*DEPOIMENTO GERAL*/
+.depoimento{
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.sobre{
+    display: flex;
+}
+
+.sobre span{
+    font-size: 0.75em;
+    display: block;
+    text-indent: 15px;  
+}
+
+.sobre img{
+    width: 30px;
+    border-radius: 50%;   
+}
+
+.titulo{
+    font-size: 1.125em;
+    margin: 20px 0px;
+}
+
+.titulo, .nome{
+    font-weight: bolder;
+}
+
+.texto{
+    font-size: 0.875em;
+    line-height: 1.4em;
+}
+
+/*DEPOIMENTOS ESPECIFICOS*/
+.depoimento1{
+    background: #733FC8 url('images/bg-pattern-quotation.svg') no-repeat top;
+    background-position-x: 90%;
+}
+
+.depoimento1 .sobre img{
+    box-shadow: 0px 0px 0px 2px #A774F2;
+}
+
+.depoimento1 .titulo, .depoimento1 .nome{
+    color: #fff;
+}
+
+.depoimento1 .texto, .depoimento1 .verificado{
+    color: #A774F2;
+}
+
+.depoimento2{
+    background: #49556B;
+}
+
+.depoimento2 .sobre img{
+    box-shadow: 0px 0px 0px 2px #838B9D;
+}
+
+.depoimento2 .titulo, .depoimento2 .nome{
+    color: #fff;
+}
+
+.depoimento2 .texto, .depoimento2 .verificado{
+    color: #838B9D;
+}
+
+.depoimento3, .depoimento5{
+    background: #fff;
+}
+
+.depoimento3 .sobre img, .depoimento5 .sobre img{
+    box-shadow: 0px 0px 0px 2px #BCBDC1;
+}
+
+.depoimento3 .titulo, .depoimento3 .nome, .depoimento5 .titulo, .depoimento5 .nome{
+    color: #5E636B;
+}
+
+.depoimento3 .texto, .depoimento3 .verificado, .depoimento5 .texto, .depoimento5 .verificado{
+    color: #BCBDC1;
+}
+
+.depoimento4{
+    background: #18202D;
+}
+
+.depoimento4 .sobre img{
+    box-shadow: 0px 0px 0px 2px #676B76;
+}
+
+.depoimento4 .titulo, .depoimento4 .nome{
+    color: #fff;
+}
+
+.depoimento4 .texto, .depoimento4 .verificado{
+    color: #676B76;
+}
+
+
+@media (min-width: 760px){
+    .estrutura{
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0px 10px;
+        grid-template-areas:
+        'dep1 dep1 dep2 dep5'
+        'dep3 dep4 dep4 dep5';
+    }
+
+    .depoimento{
+        padding: 20px 20px;
+    }
+
+    .depoimento1{
+        grid-area: dep1; 
+    }
+    
+    .depoimento1{
+        background-position-x: 80%;
+    }
+
+    .depoimento2{
+        grid-area: dep2; 
+    }
+
+    .depoimento3{
+        grid-area: dep3; 
+    }
+
+    .depoimento4{
+        grid-area: dep4; 
+    }
+
+    .depoimento5{
+        grid-area: dep5; 
+    }   
+}
