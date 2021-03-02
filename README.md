@@ -6,7 +6,7 @@ Para acessar e testar o site é recomendado ter um navegador na sua versão mais
 
 ## Pontos obrigatorio
 - [x] Layout responsivo.
-- [x] Usar grid layout para a contrução da seção de depoimentos.
+- [x] Usar grid layout para a construção da seção de depoimentos.
 
 ## Licença
 Este projeto esta sobe a licença MIT.
